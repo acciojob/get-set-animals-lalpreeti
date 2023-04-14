@@ -1,11 +1,32 @@
 //complete this code
-class Animal {}
+class Person {
+  constructor(name, age) {
+    this.name1 = name;
+    this.age1 = age;
+  }
 
-class Dog extends Animal {}
+  get name() {
+    return this.name1;
+  }
 
-class Cat extends Animal {}
+  set age(age) {
+    this.age = age1;
+  }
+}
+
+class Student extends Person {
+  study() {
+    console.log(`${this.name1} is studying`);
+  }
+}
+
+class Teacher extends Person {
+  teach() {
+    console.log(`${this.name1} is teaching`);
+  }
+}
 
 // Do not change the code below this line
-window.Animal = Animal;
-window.Dog = Dog;
-window.Cat = Cat;
+window.Person = Person;
+window.Student = Student;
+window.Teacher = Teacher;
